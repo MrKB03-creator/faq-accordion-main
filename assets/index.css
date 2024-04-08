@@ -37,12 +37,12 @@ h4:hover {
 .main_container {
     position: absolute;
     height: fit-content;
-    width: 600px;
     top:50%;
     left: 50%;
+    width: 550px;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 50px;
+    padding: 2.5rem;
     border-radius: 20px;
 }
 
@@ -99,7 +99,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   color: hsl(292, 16%, 49%);
 }
 
@@ -108,7 +108,7 @@ h4 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   color: hsl(292, 42%, 14%);
 }
 
@@ -121,3 +121,18 @@ h1 {
   font-size: 3rem;
 }
 
+
+/*Web Responsive*/
+@media only screen and (max-width:600px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main_container-header img {
+        width: 20px;
+    }
+
+    .main_container {
+        width: 300px;
+    }
+}
